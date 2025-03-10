@@ -12,3 +12,10 @@ class Todo:
     def add_tag(self, tags:list[str]):
         self.tags:list[str] = tags
 
+    def __str__(self):
+        return f"{self.code_id} - {self.title}"
+
+class TodoBook:
+    def __init__(self):
+        self.todos = {}
+
